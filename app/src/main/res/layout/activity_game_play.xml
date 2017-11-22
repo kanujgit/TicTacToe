@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/game_play_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dip"
+        android:gravity="center"
+        android:text="@string/game_title"
+        android:textColor="@color/colorWhite"
+        android:textSize="24.5sp"
+        />
+
+    <TableLayout
+        android:id="@+id/gameTableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_play_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:padding="1dip" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            >
+
+            <Button
+                android:id="@+id/user_option_button_1_1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="10"
+                android:text="@string/option_empty"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/cell_shape"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:textSize="60dp"
+
+                />
+
+            <Button
+                android:id="@+id/user_option_button_1_2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:text="@string/option_empty"
+                android:background="@drawable/cell_shape"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:textSize="60dp"/>
+
+            <Button
+                android:id="@+id/user_option_button_1_3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="10"
+                android:text="@string/option_empty"
+                android:background="@drawable/cell_shape"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:textSize="60dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp">
+
+            <Button
+                android:textColor="@color/colorWhite"
+                android:id="@+id/user_option_button_2_1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:text="@string/option_empty"
+                android:background="@drawable/cell_shape"
+                android:textSize="60dp"/>
+
+            <Button
+                android:id="@+id/user_option_button_2_2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:text="@string/option_empty"
+                android:background="@drawable/cell_shape"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:textSize="60dp"/>
+
+            <Button
+                android:id="@+id/user_option_button_2_3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/cell_shape"
+                android:text="@string/option_empty"
+                android:textColor="@color/colorWhite"
+                android:textSize="60dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+
+            <Button
+                android:id="@+id/user_option_button_3_1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:text="@string/option_empty"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/cell_shape"
+                android:textSize="60dp"/>
+
+            <Button
+                android:id="@+id/user_option_button_3_2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:text="@string/option_empty"
+                android:background="@drawable/cell_shape"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:textSize="60dp"/>
+
+            <Button
+                android:id="@+id/user_option_button_3_3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:text="@string/option_empty"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/cell_shape"
+                android:textSize="60dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/game_play_back_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/button_color"
+        android:text="@string/game_play_back_label"
+        android:layout_below="@+id/textView_player1"
+        android:layout_alignLeft="@+id/textView_player2"
+        android:layout_alignStart="@+id/textView_player2"
+        android:layout_marginTop="39dp" />
+
+    <Button
+        android:id="@+id/game_play_quit_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/button_color"
+        android:textColor="@color/colorWhite"
+        android:text="@string/game_play_quit_label"
+        android:layout_alignBaseline="@+id/game_play_restart_button"
+        android:layout_alignBottom="@+id/game_play_restart_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/game_play_restart_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/button_color"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/game_play_back_button"
+        android:layout_alignBottom="@+id/game_play_back_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/game_play_restart_label" />
+
+    <TextView
+
+        android:id="@+id/textView_player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/Player1_label"
+        android:layout_below="@+id/gameTableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+
+        android:id="@+id/textView_player2"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:layout_height="wrap_content"
+        android:text="@string/Player2_label"
+        android:layout_below="@+id/textView_player1"
+        android:layout_alignLeft="@+id/textView_player1"
+        android:layout_alignStart="@+id/textView_player1"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_player1"
+        android:text="@string/option_x"
+        android:textColor="@color/colorWhite"
+        android:layout_toRightOf="@+id/game_play_back_button"
+        android:layout_toEndOf="@+id/game_play_back_button"
+        android:layout_marginLeft="70dp"
+        />
+
+    <TextView
+        android:textColor="@color/colorWhite"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_player2"
+        android:layout_alignBottom="@+id/textView_player2"
+        android:layout_alignRight="@+id/textView3"
+        android:text="@string/option_o" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView_player1"
+        android:layout_toLeftOf="@+id/game_play_restart_button"
+        android:layout_toStartOf="@+id/game_play_restart_button"
+        android:textColor="@color/colorWhite"
+        android:text="Player1:" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_player2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:textColor="@color/colorWhite"
+        android:text="Player2:" />
+
+</RelativeLayout>
